@@ -1,0 +1,261 @@
+$xs : 331px;
+$sm : 576px;
+$md : 768px;
+$lg : 992px;
+$xl : 1200px;
+$xxl: 1400px;
+
+@import 'mixins.scss';
+@import 'dist/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', 'sans-serif' !important;
+    font-style: normal !important;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-700{
+    font-weight: 700 !important;
+}
+
+.fs-10{
+    font-size: 10px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-26{
+    font-size: 26px;
+}
+.fs-28{
+    font-size: 28px;
+}
+.fs-36{
+    font-size: 36px;
+}
+
+.lh-18px{
+    line-height: 18px;
+}
+.lh-21px{
+    line-height: 21px;
+}
+.lh-22px{
+    line-height: 22px;
+}
+.lh-24px{
+    line-height: 24px;
+}
+.lh-36px{
+    line-height: 36px;
+}
+.lh-120pr{
+    line-height: 120%;
+}
+.lh-130pr{
+    line-height: 130%;
+}
+.lh-150pr{
+    line-height: 150%;
+}
+
+.txt-color-gray{
+    color: #5F5F5F;
+}
+.txt-color-green{
+    color: #13902A;
+}
+.txt-color-blue{
+    color: #0061A3;
+}
+
+.pb-1px{
+    padding-bottom: 1px;
+
+    @include breakpoint($lg){
+        padding-bottom: 2px;
+    }
+}
+.pt-1px{
+    padding-top: 1px;
+
+    @include breakpoint($lg){
+        padding-top: 2px;
+    }
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    margin: 0;
+    padding: 0;
+}
+
+h5{
+    margin: 0;
+    padding: 0;
+}
+
+h6{
+    margin: 0;
+    padding: 0;
+}
+
+.border-end-lg{
+    border-right: 1px solid white;
+
+    @include breakpoint($lg){
+        border-right: 0px solid white;
+    }
+}
+
+.icon-group{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.link-social{
+    & img{
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.my-rounded{
+    border-radius: 8px !important;
+}
+
+.my-rounded-bot{
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+
+.btn-blue{
+    width: auto;
+    height: 100%;
+    background: #0061A3;
+}
+
+.btn-yellow{
+    background-color: #F7D300;
+
+    & span{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: black;
+    }
+    
+}
+
+.active{
+    & a{
+        border-bottom: 1px solid white !important;
+    }
+}
+
+.decorate-link{
+    text-decoration: underline;
+}
+
+.bg-blue{
+    background-color: #0061A3;
+}
+
+.d2 {
+    width: 150px; 
+    height: 75px;
+    border: 2px solid #E0E0E0;
+    border-radius: 50%;
+}
+
+.star{
+    display: block;
+    position: relative;
+    bottom: 102%;
+    left: 50%;
+    height: 0;
+
+    @include breakpoint($md){
+        bottom: 100%;
+        left: 40%;
+    }
+}
+
+.negative-margin-footer{
+    margin-top: -9.5rem !important;
+
+    @include breakpoint($lg){
+        margin-top: -7.5rem !important;
+    }
+    @include breakpoint($md){
+        margin-top: -5.5rem !important;
+    }
+    @include breakpoint($sm){
+        margin-top: -3.5rem !important;
+    }
+    @include breakpoint($xs){
+        margin-top: -1.5rem !important;
+    }
+}
+
+.dropdown-toggle{
+    background: transparent;
+    color: black;
+    border: none;
+}
+
+.black-link{
+    color: black;
+}
+
+.accordion-button{
+    color: #0061A3;
+}
